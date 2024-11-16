@@ -1,0 +1,155 @@
+/* Partidos.scss */
+
+/* Fondo general */
+.partidos {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Fondo degradado con colores cálidos */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Contenedor de partidos */
+  .partidos-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1.5s ease-out;
+    overflow: hidden;
+  }
+  
+  /* Título de la sección de partidos */
+  .partidos-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #feb47b;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /* Estilo para cada tarjeta de partido */
+  .partido-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .partido-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Información del partido (equipos y fecha) */
+  .partido-info {
+    flex: 1;
+  }
+  
+  .partido-info h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff7e5f;
+  }
+  
+  .partido-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  /* Botón de inscripción */
+  .inscribirse-btn {
+    padding: 12px 24px;
+    background-color: #ff7e5f;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .inscribirse-btn:hover {
+    background-color: #feb47b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Botón de desinscripción */
+  .desinscribirse-btn {
+    padding: 12px 24px;
+    background-color: #feb47b;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .desinscribirse-btn:hover {
+    background-color: #ff7e5f;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animaciones de deslizamiento y entrada */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design para móviles */
+  @media (max-width: 768px) {
+    .partidos-container {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    .partido-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .partido-info h3 {
+      font-size: 1.5rem;
+    }
+  
+    .partido-info p {
+      font-size: 1rem;
+    }
+  
+    .inscribirse-btn,
+    .desinscribirse-btn {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+  }
+  

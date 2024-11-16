@@ -1,0 +1,210 @@
+/* Estilos para la página de inicio mejorada */
+
+/* Contenedor principal de la página de inicio */
+.home-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  /* Animación de Fade In desde abajo */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilo del título principal */
+  .home-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Descripción del home */
+  .home-description {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    animation: fadeInUp 1.2s ease-out;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Imagen de bienvenida */
+  .home-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    animation: fadeInUp 1.4s ease-out;
+  }
+  
+  /* Estilo de los botones de acción */
+  .home-button {
+    padding: 18px 40px;
+    background-color: #f06543;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: auto;
+    animation: fadeInUp 1.6s ease-out;
+  }
+  
+  .home-button:hover {
+    background-color: #ff7c52;
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .home-button:focus {
+    outline: none;
+  }
+  
+  .home-button:active {
+    transform: translateY(0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Enlaces convertidos en botones */
+  .home-link {
+    display: inline-block;
+    padding: 18px 40px;
+    background-color: #42b983;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.8s ease-out;
+  }
+  
+  .home-link:hover {
+    background-color: #358e69;
+    transform: translateY(-5px);
+  }
+  
+  .home-link:focus {
+    outline: none;
+  }
+  
+  .home-link:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tarjetas para contenido adicional */
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+    width: 100%;
+    animation: fadeInUp 2s ease-out;
+  }
+  
+  /* Tarjetas que pueden ser de eventos o información */
+  .card {
+    width: 100%;
+    max-width: 280px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px 0;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+    animation: fadeInUp 2.2s ease-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #f06543;
+    margin-bottom: 20px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Media Query para hacer la página responsiva */
+  @media screen and (max-width: 768px) {
+    .home-container {
+      width: 90%;
+      padding: 25px;
+    }
+  
+    .home-title {
+      font-size: 2.5rem;
+    }
+  
+    .home-description {
+      font-size: 1rem;
+    }
+  
+    .home-image {
+      max-width: 100%;
+    }
+  
+    .home-button {
+      font-size: 1.1rem;
+    }
+  
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .home-link {
+      font-size: 1rem;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  

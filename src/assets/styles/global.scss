@@ -1,0 +1,174 @@
+/* Reset de estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body general con fondo y color */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f1f1f1; /* Fondo gris claro */
+    color: #333; /* Color de texto oscuro para mejor legibilidad */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: flex-start; /* Alineación vertical al inicio (parte superior) */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0;
+    padding-top: 50px; /* Margen superior para no quedar pegado al borde */
+  }
+  
+  /* Contenedor principal de la página */
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Animación de fade-in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Estilos de botones */
+  button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffb84d; /* Color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Estilos para enlaces (si los usas) */
+  a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ffb84d;
+  }
+  
+  /* Fondo de la página */
+  background {
+    background-color: #e0e0e0; /* Fondo gris muy suave */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  
+  /* Responsividad para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 20px;
+    }
+  
+    .container {
+      width: 100%;
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    input,
+    button,
+    select {
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  
+  /* Fondo de gradiente para la página */
+  .page-background {
+    background: linear-gradient(135deg, #ff6f61, #ffb84d);
+  }
+  
+  /* Estilo para elementos tipo tarjeta */
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para formularios */
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #ff6f61;
+    outline: none;
+  }
+  
+  /* Estilos para la vista en dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 100%;
+      padding: 15px;
+    }
+  }
+  
+  

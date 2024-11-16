@@ -1,0 +1,138 @@
+/* Registro.scss */
+
+/* Fondo general */
+.registro {
+    background: linear-gradient(135deg, #4ca1af, #c4e0e5); /* Fondo degradado con tonos fríos */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Contenedor principal del formulario */
+  .registro-container {
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1.5s ease-out;
+    overflow: hidden;
+  }
+  
+  /* Título de la página */
+  .registro-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4ca1af;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /* Estilos para los campos de entrada (input) */
+  .registro-container .input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .registro-container .input-field:focus {
+    border-color: #4ca1af;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(76, 161, 175, 0.3);
+  }
+  
+  .registro-container .input-field::placeholder {
+    color: #aaa;
+  }
+  
+  /* Botón de registro */
+  .registro-btn {
+    padding: 12px 24px;
+    background-color: #4ca1af;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .registro-btn:hover {
+    background-color: #2f8d98;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Enlace para ir al login */
+  .registro-container .login-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #4ca1af;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .registro-container .login-link:hover {
+    color: #2f8d98;
+  }
+  
+  /* Animaciones de entrada */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsividad para móviles */
+  @media (max-width: 768px) {
+    .registro-container {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    .registro-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .registro-container .input-field {
+      font-size: 1.1rem;
+    }
+  
+    .registro-btn {
+      font-size: 1.1rem;
+    }
+  
+    .registro-container .login-link {
+      font-size: 1.1rem;
+    }
+  }
+  
